@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
     font-size: 1rem;
     text-align: center;
+    margin-bottom: 75px; /* Adjust this value based on the footer height */
 }
 
 /* Navigation link styles */
@@ -59,8 +60,6 @@ nav ul {
 nav ul li {
     margin: 0 20px;
 }
-
-/* Removed duplicate styles */
 
 /* Section styles */
 section {
@@ -142,4 +141,89 @@ footer {
 
 .logo:hover {
     transform: rotate(360deg);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 60px 25px;
+    }
+
+    .card {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    .card {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 0;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    .card {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+
+    .portfolio-img {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100px;
+    }
 }
